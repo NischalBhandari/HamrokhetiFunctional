@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   color:white !important;
+   background-color: #f3f6f4 !important;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.fa {
+  padding: 10px;
+  padding-right: 10px;
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 10px;
+  border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.SocialMedia{
+	padding-top: 40px;
+	margin-left: 40px;
+}
+.nav-item{
+	padding-right: 20px;
+  padding-left: 20px;
+
+}
+.nav-item:hover{
+  box-shadow: 2px 2px 2px 2px #07032d;
+  border-radius: 5%;
+  z-index: 100;
+}
+.nav-item>.nav-link>a>li:hover{
+  text-shadow: 1px;
+}
+.nav-link > a > li {
+  color:black;
+}
+.navbar-brand{
+  color: black;
+}
+.image-container {
+  background-image: url("./kanchan.jpg");
+  background-size: cover;
+  position: relative;
+  height: 300px;
+  border: 2px solid black;
+  margin-bottom: 100px;
+}
+
+.cutoutimage {
+  background-color: white;
+  color: black;
+  font-size: 10vw; 
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 0px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 8px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #fff;
+}
+.icon-bar> .facebook{
+	  background: #3B5998;
+  color: white;
+}
+.icon-bar>.twitter{
+	  background: #55ACEE;
+  color: white;
+}
+.icon-bar>.instagram{
+  background: #007bb5;
+  color: white;
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-left: 20px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg) rotateX(-5deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: solid 3px;
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: white;
+  color: #296341;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: #296341;
+  color: white;
+  transform: rotateY(180deg);
+}
+.container{
+	padding: 50px;
+}
+.material-icons{
+	font-size:100px;
+}
+.SocialMedia > h2>.material-icons{
+  font-size: 30px;
+}
+.SocialMedia> h2> a >.material-icons{
+  font-size: 30px;
+  padding-right: 10px;
+}
+
+.SocialMedia> h2> a >.material-icons:hover{
+
+color: green;
+}
+.SocialMedia{
+  color:green;
+}

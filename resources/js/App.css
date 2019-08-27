@@ -1,0 +1,269 @@
+
+
+.App {
+  text-align: center;
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav{
+  display:flex;
+  font-size:30px;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-position: 100px;
+  color: white;
+  font-family: cursive;
+  border-top: 4px solid #21954a;
+  z-index: 100;
+}
+.nav-links{
+  width: 50%;
+  display: flex;
+  font-family: cursive;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  float: right;
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns: auto auto auto ;
+  padding:10px;
+}
+.grid-item{
+display: block;
+padding:20px;
+border:1px solid red;
+
+}
+.grid-container > div{
+}
+.item1{
+  grid-column: 1/ span 3;
+  background-color:green;
+  float: right;
+}
+.wf{
+  outline: 1px solid white;
+}
+.ns{
+  background-color: silver;
+}
+.ns2{
+  background-color: gray;
+}
+.row{
+  min-height: 200px;
+}
+
+.NavbarBrand{
+}
+
+.spacing{
+  padding: 20px 20px 20px 20px;
+}
+.TextCont{
+  color: black ! important;
+  background-color:yellow;
+  width: 30%;
+  box-shadow: 4px 20px 20px 2px;
+}
+.TextCont:hover{
+  background-color:#e3ec47;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.overlap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #296341;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.hovering{
+  width:100%;
+  position: relative;
+  border: solid #18395a 2px;
+  box-shadow: 10px 10px 5px black;
+
+}
+.hovering:hover{
+  transform: scale(1.5);
+  z-index: 10;
+}
+.hovering:hover .overlap {
+  height: 20%;
+
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.footer-bar{
+  background-image: url("./organic.jpg");
+  background-position: bottom;
+}
+
+.tagline{
+  color: Black;
+  padding:20px;
+  margin-bottom:30px;
+}
+.tagline>h1{
+  font-family: 'Quicksand', sans-serif;
+
+}
+.tagline>h3{
+  font-family: 'Roboto Condensed', cursive;
+}
+a{
+  color: #fff !important;
+
+}
+a:hover{
+
+  color: red;
+}
+
+h1{
+   text-shadow: -1px 0 black, 0 1px black , 1px 0 black , 0 -1px black;
+}
+h4{
+     text-shadow: 0 0 5px black;
+
+}
+
+.container-fluid >.topleft{
+  position: absolute;
+  top: 220%;
+  left: 20%;
+  font-size: 50px;
+}
+.container-fluid > img{
+  height: 300px;
+  width:100%;
+  opacity: 0.7;
+  padding-top: 330px;
+}
+footer{
+  margin-top:20px;
+
+}
+.flipper{
+  align-items : center;
+}
+.card{
+  cursor: pointer;
+}
+.card-title{
+  font-size: 30px;
+  text-align: center;
+}
+.card-body{
+  padding: 0px !important;
+}
+.modal-body > a >h3{
+  color: black !important;
+}
+.card > img {
+  height: 300px;
+}
+@media (max-width:600px){
+  .carousel-item > img{
+    object-fit: cover;
+    object-position: 50% 0;
+    width: 300%;
+    height: 337px;
+   }
+   .media-left:hover{
+    transform: translateX(10%) scale(1);
+   }
+}
+
+.media-left{
+  height: 20%;
+  width:60%;
+}
+.media-left > img {
+  height: 20%;
+  width: 100%;
+}
+.media-left :hover{
+  transform: translateX(40%) scale(1.5);
+}
+.table{
+  display: block !important;
+}
+.parallax { 
+  /* The image used */
+  background-image: url("./dhuwaniCollection/background.jpg");
+
+  /* Set a specific height */
+  height: 470px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signupbox{
+  display: flex;
+  justify-content: center;
+
+}
+.flipperbox{
+    background-image:linear-gradient(164deg,#90cc41,#21954a);
+}
